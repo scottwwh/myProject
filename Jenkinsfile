@@ -1,8 +1,14 @@
 pipeline {
   agent { label 'linux' }
+
+  environment {
+    M3 = '/usr/share/maven'
+  }
+
   tools {
     maven 'M3'
   }
+
   stages {
     // stage('Hello from Github') {
     //   steps {
