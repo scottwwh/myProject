@@ -1,9 +1,9 @@
 pipeline {
   agent { label 'linux' }
 
-  environment {
-    M3 = '/usr/share/maven'
-  }
+  // environment {
+  //   M3 = '/usr/share/maven'
+  // }
 
   tools {
     maven 'M3'
