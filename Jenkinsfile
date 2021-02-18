@@ -10,11 +10,6 @@ pipeline {
   }
 
   stages {
-    // stage('Hello from Github') {
-    //   steps {
-    //     echo "Hello world!"
-    //   }
-    // }
     stage('checkout') {
       steps {
         git 'https://github.com/effectivejenkins/myProject.git'
